@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    height: 8vh;
+  }
+  
+  main {
+    background: url("bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+  body{
+    width: 100%;
+    background-image: url('./img/logokeila.png');
+    background-size: 20%;
+  }
+  .p1{
+   
+    background-color: rgb(248, 244, 250);
+    padding: 100px;
+    text-align: left;
+    font-family: Arial, Helvetica;
+    width: 600px;
+        height: 30px;
+        padding: 12px;
+        border: 6px solid #333;
+    margin: 50px auto;
+    
+    
+  }
+  p{
+    background: rgba(218, 213, 213, 0.5);
+    text-align: center;
+    font-size: Arial, Helvetica;
+    
+    
+        
+  }
+  .texto1{
+    background: rgba(253, 253, 253, 0.5);
+    text-align: left;
+    padding-top: auto;
+    margin-top: 100px;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+
+        
+  
+  h1{
+    
+    background-color: rgb(248, 244, 250);
+    padding: 10px;
+    font-family: Arial, Helvetica;
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto; 
+    border: 10px solid rgb(26, 25, 25);
+    background-color: rgb(255, 255, 240);
+    
+  }
+ .in{
+  width: 200px;
+  height: auto;
+  padding-block: 12;
+  border: solid 6px;
+  text-shadow: white 0px 0px 2px;
+  font-size: 36px;
+  margin: 50px auto;
+  text-align: center;
+  border-radius: 50px;
+ }
+  .introtexto{
+  font-display: 50px;
+  
+}
+.textin{
+  font-size: 18px;
+  margin-bottom: 3.0em;
+  line-height: 1.8em;
+  background: rgba(255, 254, 254, 0.712);
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1000px;
+  text-align: justify;
+  border-radius: 5px;
+  
+}
+
+.textin > p{
+  padding: 10px;
+}
+
+.fotoasul{
+  width: 340px;
+  margin-top: 50px;
+  border-radius: 50px;
+  
+}
+
+footer>p{
+  margin: 0;
+  color:white;
+}
+
+footer{
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.986);
+}
+
+.ceai3{
+  width: 345px;
+  margin-top: 50px;
+  border-radius: 50px;
+  
+}
+
+.topico1{
+  width: 415px;
+  margin-top: 50px;
+  border-radius: 50px;
+  
+}
+.topico2{
+  width: 845px;
+  margin-top: 50px;
+  border-radius: 50px;
+  
+
+}
+.topico3{
+  width: 455px;
+  margin-top: 50px;
+  border-radius: 50px;
+  
+}
+.topico4{
+  width: 300px;
+  margin-top: 50px;
+  border-radius: 50px;
+  padding: 10px;
+}
